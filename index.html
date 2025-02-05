@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock_Paper_Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1><b>Open Console To Watch The Messages</b></h1>
+
+    <div class="main">
+        <div class="round" id="round">
+            <p>Round</p>
+        </div>
+
+        <div class="round">
+            <div class="rounds">
+                <input type="number" id="roundNumber" min="1" placeholder="Enter number of rounds">
+                <div class="btn">
+                    <button id="start" onclick="startGame()">Start</button>
+                    <button id="reload" onclick="location.reload()">New</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="options">
+        <div>
+            <input class="option" id="rock" type="radio" name="choice" value="Rock">
+            <label class="option" for="rock">🪨</label>
+            <p class="options2">Rock</p>
+        </div>
+        <div>
+            <input class="option" id="paper" type="radio" name="choice" value="Paper">
+            <label class="option" for="paper">📃</label>
+            <p class="options2">Paper</p>
+        </div>
+        <div>
+            <input class="option" id="scissors" type="radio" name="choice" value="Scissors">
+            <label class="option" for="scissors">✂️</label>
+            <p class="options2">Scissors</p>
+        </div>
+    </div>
+    
+    <div class="body">
+        <div class="msgs">
+            <p class="msg" id="msg">Start The Game</p>
+            <p class="msg" id="msg1"></p>
+            <p class="msg" id="msg2"></p>
+            <p class="msg" id="msg3"></p>
+            <p class="msg" id="msg4"></p>
+            <p class="msg" id="msg5"></p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

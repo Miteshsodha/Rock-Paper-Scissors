@@ -1,0 +1,143 @@
+body {
+    background-color: rgb(253, 235, 214);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border: 5px solid #ccc;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    font-size: 7em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px;
+    margin: 20px 300px 0px 300px;
+    padding: 50px 25px;
+    padding-bottom: 0;
+}
+
+/* Change background color when radio button is checked */
+.option:hover {
+    background-color: #020101;
+    color: white; /* Optional: Change text color for better visibility */
+}
+
+.round {
+    font-size: 30px; /* Smaller font size */
+    color: #ee5454;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border-radius: 45px;
+}
+
+.msgs {
+    font-size: 20px; /* Smaller font size */
+    color: #ee5454;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding: 25px;
+    display: inline-block;
+    background-color: rgb(255, 247, 240);
+    border: 3px solid rgb(3, 3, 3);
+    border-radius: 50px;
+}
+
+button#start, button#reload {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#start:hover, button#reload:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    margin: 50px 400px 0px 400px;
+}
+
+#msg3 {
+    font-weight: bold;
+}
+
+#roundNumber {
+    background-color: rgb(253, 215, 172);
+    border-radius: 50px;
+    padding: 10px;
+    border: 1px solid rgb(252, 193, 130);
+    color: red;
+    font-size: 15px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    gap: 5px;
+}
+
+.rounds {
+    display: contents;
+    justify-content: center;
+    gap: 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+#round {
+    display: contents;
+}
+
+.options2 {
+    font-size: 25px; /* Smaller font size */
+    color: #ee5454;
+    font-weight: bold;
+}
+
+#msg2 {
+    color: #068ee2;
+}
+
+
+#msg3,#msg4 {
+    color: blueviolet;
+}
+
+#msg1 {
+    color: #020101;
+}
